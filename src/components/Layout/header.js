@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 const Header = () => {
 
     const [isSticky, setIsSticky] = useState(false);
-    const [menuOpen, setMenuOpen] = useState(false); 
+    const [menuOpen, setMenuOpen] = useState(false);
     const [expanded, setExpanded] = useState(false);
 
-  const toggleExpand = () => {
-    setExpanded((prev) => !prev);
-  };
+    const toggleExpand = () => {
+        setExpanded((prev) => !prev);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -33,7 +33,7 @@ const Header = () => {
                     <iframe class="aspect-video w-full" src="https://www.youtube.com/embed/oRI37cOPBQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class={`overlay ${menuOpen ? "show":""} `} ></div>
+            <div class={`overlay ${menuOpen ? "show" : ""} `} ></div>
             <header className={`h-auto full-width relative py-[15px] lg:py-[26px] ${isSticky ? "sticky-header" : ""}`} >
                 <div className="px-[12px] md:px-[36px] mt-[70px] xl:px-0 flex items-center justify-between mx-auto relative !mt-0 max-w-[1320px]">
                     <a className="flex" href="/">
@@ -173,54 +173,6 @@ const Header = () => {
                                 >
                                     About
                                 </a>
-                                <i>
-                                    <img
-                                        className="icon-caret group-hover:filter-green"
-                                        src="./assets/images/icons/icon-caret.svg"
-                                        alt="caret"
-                                    />
-                                </i>
-                                <ul className="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-1 w-[185px]">
-                                    <li
-                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
-                                        data-menu="ab1"
-                                    >
-                                        <a className="flex items-center text-[14px]" href="/about-1.html">
-                                            <img
-                                                className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                                                src="./assets/images/icons/icon-star-header.svg"
-                                                alt=""
-                                            />
-                                            <span className="whitespace-nowrap">About 01</span>
-                                        </a>
-                                    </li>
-                                    <li
-                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
-                                        data-menu="ab2"
-                                    >
-                                        <a className="flex items-center text-[14px]" href="/about-2.html">
-                                            <img
-                                                className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                                                src="./assets/images/icons/icon-star-header.svg"
-                                                alt=""
-                                            />
-                                            <span className="whitespace-nowrap">About 02</span>
-                                        </a>
-                                    </li>
-                                    <li
-                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
-                                        data-menu="ab3"
-                                    >
-                                        <a className="flex items-center text-[14px]" href="/about-3.html">
-                                            <img
-                                                className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                                                src="./assets/images/icons/icon-star-header.svg"
-                                                alt=""
-                                            />
-                                            <span className="whitespace-nowrap">About 03</span>
-                                        </a>
-                                    </li>
-                                </ul>
                             </li>
                             <li className="flex items-center group">
                                 <a
@@ -610,7 +562,7 @@ const Header = () => {
                     <span className="burger-icon-mid"> </span>
                     <span className="burger-icon-bottom" />
                 </div>
-                <nav className={`fixed top-0 right-0 bg-white flex flex-col h-screen nav-shadow overflow-y-scroll nav-mobile transition-all duration-200 w-[380px] z-[100] ${menuOpen ? "":"opacity-0 pointer-events-none"}  `}>
+                <nav className={`fixed top-0 right-0 bg-white flex flex-col h-screen nav-shadow overflow-y-scroll nav-mobile transition-all duration-200 w-[380px] z-[100] ${menuOpen ? "" : "opacity-0 pointer-events-none"}  `}>
                     <div className="flex items-center border-b p-[15px] lg:p-[26px] gap-[10px] border-[#F2F4F7]">
                         <img
                             className="max-w-[50px]"
@@ -652,91 +604,18 @@ const Header = () => {
                                             Homepage 02
                                         </a>
                                     </li>
-                                    <li className="text-md py-[10px]" id="hp3">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/home-3.html"
-                                        >
-                                            Homepage 03
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="hp4">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/home-4.html"
-                                        >
-                                            Homepage 04
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="hp5">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/home-5.html"
-                                        >
-                                            Homepage 05
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="hp6">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/home-6.html"
-                                        >
-                                            Homepage 06
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="hp7">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/home-7.html"
-                                        >
-                                            Homepage 07
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="hp8">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/home-8.html"
-                                        >
-                                            Homepage 08
-                                        </a>
-                                    </li>
                                 </ul>
                             </li>
-                            <li className="group menu-mobile-item py-[13px]">
+                            <li className=" py-[13px]">
                                 <div className="flex items-center justify-between transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]">
                                     <p>About</p>
-                                    <img
+                                    {/* <img
                                         className="w-[18px] h-[18px]"
                                         src="./assets/images/icons/icon-angle-down-fill.svg"
                                         alt="angle icon"
-                                    />
+                                    /> */}
                                 </div>
-                                <ul className="pl-5 menu-child hidden pt-[10px]">
-                                    <li className="text-md py-[10px]" id="ab1">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/about-1.html"
-                                        >
-                                            About 01
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="ab2">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/about-2.html"
-                                        >
-                                            About 02
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="ab3">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/about-3.html"
-                                        >
-                                            About 03
-                                        </a>
-                                    </li>
-                                </ul>
+
                             </li>
                             <li className="group menu-mobile-item py-[13px]">
                                 <div className="flex items-center justify-between transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]">
@@ -756,67 +635,11 @@ const Header = () => {
                                             Services 01
                                         </a>
                                     </li>
-                                    <li className="text-md py-[10px]" id="sv2">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/services-2.html"
-                                        >
-                                            Services 02
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="p1">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/pricing-1.html"
-                                        >
-                                            Pricing 01
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="p2">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/pricing-2.html"
-                                        >
-                                            Pricing 02
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="faqs1">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/faqs-1.html"
-                                        >
-                                            FAQS 01
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="faqs2">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/faqs-2.html"
-                                        >
-                                            FAQS 02
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="career">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/career.html"
-                                        >
-                                            Career
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="career-details">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/career-details.html"
-                                        >
-                                            Career Detials
-                                        </a>
-                                    </li>
                                 </ul>
                             </li>
                             <li className="group menu-mobile-item py-[13px]">
                                 <div className="flex items-center justify-between transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]">
-                                    <p>Pages</p>
+                                    <p>News</p>
                                     <img
                                         className="w-[18px] h-[18px]"
                                         src="./assets/images/icons/icon-angle-down-fill.svg"
@@ -830,38 +653,6 @@ const Header = () => {
                                             href="/contact.html"
                                         >
                                             Contact
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="singup">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/signup.html"
-                                        >
-                                            Sign Up
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="login">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/login.html"
-                                        >
-                                            Log In
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="rp">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/reset-password.html"
-                                        >
-                                            Reset Password
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="error404">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/error-404.html"
-                                        >
-                                            Error 404
                                         </a>
                                     </li>
                                 </ul>
@@ -884,27 +675,11 @@ const Header = () => {
                                             Blog 01
                                         </a>
                                     </li>
-                                    <li className="text-md py-[10px]" id="b2">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/blog-2.html"
-                                        >
-                                            Blog 02
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="single">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/single.html"
-                                        >
-                                            Blog Single
-                                        </a>
-                                    </li>
                                 </ul>
                             </li>
                             <li className="group menu-mobile-item py-[13px]">
                                 <div className="flex items-center justify-between transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]">
-                                    <p>Shop</p>
+                                    <p>Events</p>
                                     <img
                                         className="w-[18px] h-[18px]"
                                         src="./assets/images/icons/icon-angle-down-fill.svg"
@@ -920,22 +695,6 @@ const Header = () => {
                                             Shop 01
                                         </a>
                                     </li>
-                                    <li className="text-md py-[10px]" id="s2">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/shop-2.html"
-                                        >
-                                            Shop 02
-                                        </a>
-                                    </li>
-                                    <li className="text-md py-[10px]" id="product">
-                                        <a
-                                            className="block transition-all duration-200 hover:text-green-900 hover:translate-x-1"
-                                            href="/single-product.html"
-                                        >
-                                            Product Details
-                                        </a>
-                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -948,54 +707,6 @@ const Header = () => {
                                         href="/"
                                     >
                                         Profile
-                                    </a>
-                                </li>
-                                <li className="py-[13px]">
-                                    <a
-                                        className="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]"
-                                        href="/"
-                                    >
-                                        Work Preferences
-                                    </a>
-                                </li>
-                                <li className="py-[13px]">
-                                    <a
-                                        className="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]"
-                                        href="/"
-                                    >
-                                        My Boosted Shots
-                                    </a>
-                                </li>
-                                <li className="py-[13px]">
-                                    <a
-                                        className="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]"
-                                        href="/"
-                                    >
-                                        My Collections
-                                    </a>
-                                </li>
-                                <li className="py-[13px]">
-                                    <a
-                                        className="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]"
-                                        href="/"
-                                    >
-                                        Account Settings
-                                    </a>
-                                </li>
-                                <li className="py-[13px]">
-                                    <a
-                                        className="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]"
-                                        href="/"
-                                    >
-                                        Go Pro
-                                    </a>
-                                </li>
-                                <li className="py-[13px]">
-                                    <a
-                                        className="transition-all duration-200 hover:text-green-900 hover:translate-x-[2px]"
-                                        href="/"
-                                    >
-                                        Sign Out
                                     </a>
                                 </li>
                             </ul>

@@ -1,0 +1,323 @@
+
+
+export const LOGO_ITEMS = [
+    { src: "/assets/images/partner-logo-1.svg", alt: "partner logo 1" },
+    { src: "/assets/images/partner-logo-2.svg", alt: "partner logo 2" },
+    { src: "/assets/images/partner-logo-3.svg", alt: "partner logo 3" },
+    { src: "/assets/images/partner-logo-4.svg", alt: "partner logo 4" },
+    { src: "/assets/images/partner-logo-5.svg", alt: "partner logo 5", extraClass: "md:col-start-2 lg:col-start-auto" },
+    { src: "/assets/images/partner-logo-6.svg", alt: "partner logo 6", extraClass: "md:col-start-3 lg:col-start-auto" },
+];
+
+export const TABDATA = [
+    {
+        id: "branding",
+        label: "Branding",
+        image: "/assets/images/thumbnail-1.png",
+        bgClass: "bg-bg-2",
+        heading: "Optimize and scale, easy to start",
+        content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+    },
+    {
+        id: "development",
+        label: "Development",
+        image: "/assets/images/thumbnail-3.png",
+        bgClass: "bg-bg-3",
+        heading: "Design Studios That Everyone Should Know",
+        content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+    },
+    {
+        id: "animation",
+        label: "Animation",
+        image: "/assets/images/thumbnail-4.png",
+        bgClass: "bg-bg-4",
+        heading: "We can blend colors multiple ways",
+        content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+    },
+    {
+        id: "user-exp",
+        label: "User Experience",
+        image: "/assets/images/thumbnail-5.png",
+        bgClass: "bg-bg-5",
+        heading: "Choose The Best Plan That's For You",
+        content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+    },
+    {
+        id: "social-network",
+        label: "Social Network",
+        image: "/assets/images/thumbnail-19.png",
+        bgClass: "bg-bg-6",
+        heading: "Subscribe our newsletter to get gift",
+        content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+    },
+    {
+        id: "marketing",
+        label: "Marketing",
+        image: "/assets/images/thumbnail-22.png",
+        bgClass: "bg-bg-7",
+        heading: "Ready to get started? Create and Account",
+        content:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
+    },
+];
+
+export const STRATEGY_DATA = [
+    {
+        icon: "/assets/images/icons/icon-flower.svg",
+        iconWhite: "/assets/images/icons/icon-flower-white.svg",
+        bgClass: "bg-bg-5",
+        title: "Business strategy",
+        description:
+            "You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.",
+    },
+    {
+        icon: "/assets/images/icons/icon-map.svg",
+        iconWhite: "/assets/images/icons/icon-map-white.svg",
+        bgClass: "bg-bg-9",
+        title: "Local Marketing",
+        description:
+            "You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.",
+    },
+    {
+        icon: "/assets/images/icons/icon-pine.svg",
+        iconWhite: "/assets/images/icons/icon-pine-white.svg",
+        bgClass: "bg-bg-2",
+        title: "Social Media",
+        description:
+            "You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.",
+    },
+];
+
+export const BELIEVE_FEATURES = [
+    {
+        title: "Boost your sale",
+        description: "The latest design trends meet hand-crafted templates.",
+        icon: "/assets/images/icons/icon-leaf.svg",
+    },
+    {
+        title: "Smart Installation Tools",
+        description: "The latest design trends meet hand-crafted templates.",
+        icon: "/assets/images/icons/icon-leaf.svg",
+    },
+    {
+        title: "Introducing New Features",
+        description: "The latest design trends meet hand-crafted templates.",
+        icon: "/assets/images/icons/icon-leaf.svg",
+    },
+    {
+        title: "Dynamic Boosting",
+        description: "The latest design trends meet hand-crafted templates.",
+        icon: "/assets/images/icons/icon-leaf.svg",
+    },
+];
+
+export const OFFER_DATA = [
+    {
+        icon: "/assets/images/icons/icon-trees.svg",
+        title: "Market research",
+        desc: "One make creepeth, man bearing theira firmament.",
+    },
+    {
+        icon: "/assets/images/icons/icon-sun.svg",
+        title: "Strategic Consulting",
+        desc: "One make creepeth, man bearing theira firmament.",
+    },
+    {
+        icon: "/assets/images/icons/icon-hat.svg",
+        title: "Cognitive Solution",
+        desc: "One make creepeth, man bearing theira firmament.",
+    },
+    {
+        icon: "/assets/images/icons/icon-trees.svg",
+        title: "Market research",
+        desc: "One make creepeth, man bearing theira firmament.",
+    },
+    {
+        icon: "/assets/images/icons/icon-sun.svg",
+        title: "Strategic Consulting",
+        desc: "One make creepeth, man bearing theira firmament.",
+    },
+    {
+        icon: "/assets/images/icons/icon-hat.svg",
+        title: "Cognitive Solution",
+        desc: "One make creepeth, man bearing theira firmament.",
+    },
+    {
+        icon: "/assets/images/icons/icon-trees.svg",
+        title: "Market research",
+        desc: "One make creepeth, man bearing theira firmament.",
+    },
+    {
+        icon: "/assets/images/icons/icon-sun.svg",
+        title: "Strategic Consulting",
+        desc: "One make creepeth, man bearing theira firmament.",
+    },
+    {
+        icon: "/assets/images/icons/icon-hat.svg",
+        title: "Cognitive Solution",
+        desc: "One make creepeth, man bearing theira firmament.",
+    },
+];
+
+export const HAPPY_CUSTOMER_DATA = [
+    {
+        image: "/assets/images/avatar-1.png",
+        name: "Wade Warren",
+        company: "Louis Vuitton",
+        message:
+            "Even factoring differences in body weight between children and adults into account.",
+        borderClass: "border-bg-4",
+    },
+    {
+        image: "/assets/images/avatar-2.png",
+        name: "Wade Warren",
+        company: "Louis Vuitton",
+        message:
+            "Even factoring differences in body weight between children and adults into account.",
+        borderClass: "border-bg-6",
+    },
+    {
+        image: "/assets/images/avatar-3.png",
+        name: "Wade Warren",
+        company: "Louis Vuitton",
+        message:
+            "Even factoring differences in body weight between children and adults into account.",
+        borderClass: "border-bg-10",
+    },
+    {
+        image: "/assets/images/avatar-4.png",
+        name: "Wade Warren",
+        company: "Louis Vuitton",
+        message:
+            "Even factoring differences in body weight between children and adults into account.",
+        borderClass: "border-bg-9",
+    },
+    {
+        image: "/assets/images/avatar-5.png",
+        name: "Wade Warren",
+        company: "Louis Vuitton",
+        message:
+            "Even factoring differences in body weight between children and adults into account.",
+        borderClass: "border-bg-4",
+    },
+    {
+        image: "/assets/images/avatar-6.png",
+        name: "Wade Warren",
+        company: "Louis Vuitton",
+        message:
+            "Even factoring differences in body weight between children and adults into account.",
+        borderClass: "border-bg-6",
+    },
+    {
+        image: "/assets/images/avatar-7.png",
+        name: "Wade Warren",
+        company: "Louis Vuitton",
+        message:
+            "Even factoring differences in body weight between children and adults into account.",
+        borderClass: "border-bg-10",
+    },
+    {
+        image: "/assets/images/avatar-8.png",
+        name: "Wade Warren",
+        company: "Louis Vuitton",
+        message:
+            "Even factoring differences in body weight between children and adults into account.",
+        borderClass: "border-bg-9",
+    },
+];
+
+export const NEWS_DATA = [
+    {
+        category: "company",
+        title: "We can blend colors multiple ways, the most common",
+        image: "/assets/images/thumbnail-3.png",
+        bgClass: "bg-bg-9",
+        link: "/single.html",
+    },
+    {
+        category: "Marketing Event",
+        title: "How To Blow Through Capital At An Incredible Rate",
+        image: "/assets/images/thumbnail-4.png",
+        bgClass: "bg-bg-6",
+        link: "/single.html",
+    },
+    {
+        category: "Customer Services",
+        title: "Design Studios That Everyone Should Know About?",
+        image: "/assets/images/thumbnail-5.png",
+        bgClass: "bg-bg-4",
+        link: "/single.html",
+    },
+];
+
+export const PLAN_DATA = [
+  {
+    price: "$35",
+    period: "/month",
+    type: "Standard",
+    description: "All the basics for businesses that are just getting started.",
+    features: ["Unlimited updates", "Custom permissions", "Custom designs & features"],
+    featureIcons: ["tick", "tick", "close"],
+    billing: "monthly",
+  },
+  {
+    price: "$89",
+    period: "/month",
+    type: "Essentials",
+    description: "All the basics for businesses that are just getting started.",
+    features: [
+      "Unlimited updates",
+      "Custom permissions",
+      "Custom designs & features",
+      "Custom designs & features",
+    ],
+    featureIcons: ["tick", "tick", "close", "close"],
+    billing: "monthly",
+  },
+  {
+    price: "$125",
+    period: "/month",
+    type: "Premium",
+    description: "Avanced features for pros who need more customization.",
+    features: ["Unlimited updates", "Custom permissions", "Custom designs & features"],
+    featureIcons: ["tick", "tick", "close"],
+    billing: "monthly",
+  },
+  {
+    price: "$420",
+    period: "/year",
+    type: "Standard",
+    description: "All the basics for businesses that are just getting started.",
+    features: ["Unlimited updates", "Custom permissions", "Custom designs & features"],
+    featureIcons: ["tick", "tick", "close"],
+    billing: "annually",
+  },
+  {
+    price: "$1068",
+    period: "/year",
+    type: "Essentials",
+    description: "All the basics for businesses that are just getting started.",
+    features: [
+      "Unlimited updates",
+      "Custom permissions",
+      "Custom designs & features",
+      "Custom designs & features",
+    ],
+    featureIcons: ["tick", "tick", "close", "close"],
+    billing: "annually",
+  },
+  {
+    price: "$1500",
+    period: "/year",
+    type: "Premium",
+    description: "Avanced features for pros who need more customization.",
+    features: ["Unlimited updates", "Custom permissions", "Custom designs & features"],
+    featureIcons: ["tick", "tick", "close"],
+    billing: "annually",
+  },
+];

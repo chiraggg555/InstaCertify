@@ -12,7 +12,6 @@ import WhyTrust from "@/components/Home/why-trust";
 export default function Home() {
   return (
     <>
-    
       <Banner />
       <Logos />
       <WhyTrust />

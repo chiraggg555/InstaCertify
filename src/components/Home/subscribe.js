@@ -1,4 +1,6 @@
 
+import Link from "next/link";
+
 const Subscribe = () => {
 
     return (
@@ -14,9 +16,9 @@ const Subscribe = () => {
                     <p className="text-text text-gray-500">
                         By clicking the button, you are agreeing with our
                     </p>
-                    <a className="text-green-900" href="/">
+                    <Link className="text-green-900" href="/">
                         Term &amp; Conditions
-                    </a>
+                    </Link>
                     <form className="mt-[30px]" action="/">
                         <div className="bg-white flex items-center justify-between p-3 rounded-[55px]">
                             <input
@@ -28,7 +30,6 @@ const Subscribe = () => {
                                 className="rounded-full bg-green-900 grid place-items-center w-[56px] h-[56px]"
                                 type="submit"
                             >
-                                {" "}
                                 <img
                                     className="filter-white"
                                     src="./assets/images/icons/icon-right.svg"
@@ -39,7 +40,6 @@ const Subscribe = () => {
                     </form>
                 </div>
                 <div className="relative flex-1">
-                    {" "}
                     <img
                         className="h-full w-full object-cover rounded-2xl img-shadow lg:absolute lg:max-w-[332px] lg:h-[403px] lg:right-0"
                         src="./assets/images/thumbnail-2.png"
