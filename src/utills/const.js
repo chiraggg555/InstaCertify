@@ -1,5 +1,17 @@
 
 
+
+export const PAGE_SLUG = {
+	HOME: "/",
+	ABOUT_US: "/about-us",
+	CONTACT_US: "/contact-us",
+	SITE_MAP: "/site-map",
+	INSTA: "https://www.instagram.com/",
+	FACEBOOK: "https://www.facebook.com/",
+	YOUTUBE: "https://www.youtube.com/",
+	TWITTER: "https://twitter.com/"
+};
+
 export const LOGO_ITEMS = [
     { src: "/assets/images/partner-logo-1.svg", alt: "partner logo 1" },
     { src: "/assets/images/partner-logo-2.svg", alt: "partner logo 2" },
