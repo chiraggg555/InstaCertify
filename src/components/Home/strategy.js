@@ -6,11 +6,10 @@ const Strategy = () => {
     <div className="px-[12px] md:px-[36px] mt-[70px] xl:px-0 lg:mt-[100px]">
       <div className="text-center mb-[70px]">
         <h2 className="font-bold font-chivo mx-auto text-[35px] leading-[44px] md:text-[46px] md:leading-[52px] lg:text-heading-1 text-gray-900 mb-5 md:mb-[30px] max-w-[725px]">
-          We facilitate the creation of strategy and design
+          Our Services
         </h2>
         <p className="text-quote md:text-lead-lg text-gray-600 mx-auto max-w-[976px]">
-          Interactively transform magnetic growth strategies whereas prospective
-          "outside the box" thinking.
+          We work with more than 200 certified experts and laboratories to present reliable solutions for the required testing, such as the BIS, ASTM, IS, and ISO standards.
         </p>
       </div>
 

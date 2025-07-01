@@ -41,7 +41,7 @@ const Header = () => {
                     <Link className="flex" href="/">
                         <img
                             className="logo z-50 w-[90px] md:w-[101px] lg:w-[122px] xl:w-[138px]"
-                            src="./assets/images/logo.svg"
+                            src="/assets/img/sad.svg"
                             alt="logo image"
                         />
                     </Link>
@@ -60,7 +60,15 @@ const Header = () => {
                                     className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
                                     href={PAGE_SLUG.ABOUT_US}
                                 >
-                                    About
+                                Our Service  
+                                </Link>
+                            </li>
+                            <li className="flex items-center group">
+                                <Link
+                                    className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
+                                    href={PAGE_SLUG.ABOUT_US}
+                                >
+                                     About
                                 </Link>
                             </li>
                             <li className="flex items-center group">
@@ -68,7 +76,7 @@ const Header = () => {
                                     className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
                                     href="/"
                                 >
-                                    Service
+                                    Resourses
                                 </Link>
                             </li>
                             <li className="flex items-center group">
@@ -76,15 +84,7 @@ const Header = () => {
                                     className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
                                     href="/"
                                 >
-                                    News
-                                </Link>
-                            </li>
-                            <li className="flex items-center group">
-                                <Link
-                                    className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
-                                    href="/"
-                                >
-                                    Blog
+                                    User
                                 </Link>
                                 <i>
                                     <img
@@ -104,12 +104,25 @@ const Header = () => {
                                                 src="./assets/images/icons/icon-edit.svg"
                                                 alt=""
                                             />
-                                            <span className="whitespace-nowrap">Blog 01</span>
+                                            <span className="whitespace-nowrap">Create an account</span>
+                                        </Link>
+                                    </li>
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="b1"
+                                    >
+                                        <Link className="flex items-center text-[14px]" href="/blog-1.html">
+                                            <img
+                                                className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
+                                                src="./assets/images/icons/icon-edit.svg"
+                                                alt=""
+                                            />
+                                            <span className="whitespace-nowrap">Login</span>
                                         </Link>
                                     </li>
                                 </ul>
                             </li>
-                            <li className="flex items-center group">
+                            {/* <li className="flex items-center group">
                                 <Link
                                     className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
                                     href="/"
@@ -138,7 +151,7 @@ const Header = () => {
                                         </Link>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                     <div className="hidden xl:block">
@@ -148,7 +161,7 @@ const Header = () => {
                                 href={PAGE_SLUG.CONTACT_US}
                             >
                                 <span className="block text-inherit w-full h-full rounded-[50px] text-heading-6 font-bold font-chivo">
-                                    Learn more
+                                    Contact Us
                                 </span>
                                 <i>
                                     <img

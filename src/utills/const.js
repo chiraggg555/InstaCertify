@@ -83,25 +83,25 @@ export const STRATEGY_DATA = [
         icon: "/assets/images/icons/icon-flower.svg",
         iconWhite: "/assets/images/icons/icon-flower-white.svg",
         bgClass: "bg-bg-5",
-        title: "Business strategy",
+        title: "Certifications",
         description:
-            "You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.",
+            "We offer a wide range of certification services to help businesses comply with industry standards and regulations.",
     },
     {
         icon: "/assets/images/icons/icon-map.svg",
         iconWhite: "/assets/images/icons/icon-map-white.svg",
         bgClass: "bg-bg-9",
-        title: "Local Marketing",
+        title: "Testing",
         description:
-            "You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.",
+            "Our state-of-the-art testing facilities and expert team are equipped to perform rigorous testing for a variety of products.",
     },
     {
         icon: "/assets/images/icons/icon-pine.svg",
         iconWhite: "/assets/images/icons/icon-pine-white.svg",
         bgClass: "bg-bg-2",
-        title: "Social Media",
+        title: "Equipment",
         description:
-            "You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.",
+            "We provide advanced tools and machinery to boost operational efficiency and ensure businesses meet top safety and performance standards.",
     },
 ];
 
