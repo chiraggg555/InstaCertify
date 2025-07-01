@@ -17,8 +17,8 @@ export default function Home() {
       <WhyTrust />
       <Strategy />
       <Believe />
-      <Offer />
-      <HappyCustomer />
+      // <Offer />
+      // <HappyCustomer />
       <News />
       <Plan />
       <Subscribe />
