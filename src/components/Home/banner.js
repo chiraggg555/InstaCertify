@@ -24,16 +24,24 @@ const Banner = () => {
                                 className="flex items-center inline-block z-10 relative transition-all duration-200 group px-[22px] py-[15px] lg:px-[32px] lg:py-[22px] rounded-[50px] bg-gray-900 text-white hover:bg-gray-100 hover:text-gray-900 hover:-translate-y-[2px] text-white bg-black text-heading-6 tracking-wide mr-[22px]"
                                 href={PAGE_SLUG.ABOUT_US}
                             >
-                                <span className="block text-inherit w-full h-full rounded-[50px] text-lg font-chivo font-semibold">
+                                <span className="block text-inherit w-full h-full rounded-[50px] text-lg font-chivo font-semibold ">
                                     About Us
                                 </span>
-                                <i>
+                                {/* <i>
                                     <img
-                                        className="ml-[7px] w-[12px] filter-white group-hover:filter-black"
+                                        className="ml-[7px] w-[12px] filter-white group-hover:filter-orange"
                                         src="./assets/images/icons/icon-right.svg"
                                         alt="arrow right icon"
                                     />
-                                </i>
+                                </i> */}
+                                <i>
+  <img
+    className="ml-[7px] w-[12px] filter-white group-hover:filter-orange"
+    src="./assets/images/icons/icon-right.svg"
+    alt="arrow right icon"
+  />
+</i>
+
                             </Link>
                         </button>
                         <Link
