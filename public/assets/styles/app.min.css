@@ -559,19 +559,43 @@ input:checked~.dot {
 
 /*# sourceMappingURL=app.min.css.map */
 
-.hover\:bg-gray-900:hover {
-  background-color: #ec691f !important; /* or your orange shade */
-  color: white !important; /* Optional: ensure text is visible */
+/* .hover\:bg-gray-900:hover {
+  background-color: #ec691f !important; 
+  color: white !important; 
 }
 
-/* Base state — override gray-900 to orange */
 .bg-gray-900 {
   background-color: #ec691f !important;
   color: white !important;
 }
 
-/* Hover effect — gray background + orange text */
 .hover\:bg-gray-100:hover {
-  background-color: #f3f4f6 !important; /* Tailwind's gray-100 */
+  background-color: #f3f4f6 !important; 
   color: #ec691f !important;
+} */
+
+
+/* Hide on xl and above */
+.burger-visible-mobile {
+  display: block;
 }
+
+@media (min-width: 1280px) {
+  .burger-visible-mobile {
+    display: none;
+  }
+}
+
+@keyframes marqueeUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-marquee-up {
+  animation: marqueeUp 10s linear infinite;
+}
+

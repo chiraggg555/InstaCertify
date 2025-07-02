@@ -40,7 +40,7 @@ const Header = () => {
                 <div className="px-[12px] md:px-[36px] mt-[70px] xl:px-0 flex items-center justify-between mx-auto relative !mt-0 max-w-[1320px]">
                     <Link className="flex" href="/">
                         <img
-                            className="logo z-50 w-[90px] md:w-[101px] lg:w-[122px] xl:w-[138px]"
+                            className="logo z-50 w-[90px] md:w-[101px] lg:w-[122px] xl:w-[139px]"
                             src="/assets/img/sad.svg"
                             alt="logo image"
                         />
@@ -50,7 +50,7 @@ const Header = () => {
                             <li className="flex items-center group">
                                 <Link
                                     className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
-                                    href="/"
+                                    href={PAGE_SLUG.HOME}
                                 >
                                     Home
                                 </Link>
@@ -60,38 +60,79 @@ const Header = () => {
                                     className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
                                     href={PAGE_SLUG.ABOUT_US}
                                 >
-                                Our Service  
+                                    About Us
                                 </Link>
                             </li>
-                            <li className="flex items-center group">
-                                <Link
-                                    className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
-                                    href={PAGE_SLUG.ABOUT_US}
-                                >
-                                     About
+                            <li class="flex items-center group">
+                                <Link class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="/">
+                                    Certification
                                 </Link>
+                                <i><img class="icon-caret group-hover:filter-green" src="./assets/images/icons/icon-caret.svg" alt="caret" /></i>
+                                <ul className="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-1 w-[185px]">
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="ab1"
+                                    >
+                                        <a className="flex items-center justify-between text-[14px]" href="/about-1.html">
+                                            <span className="whitespace-nowrap">America</span>
+                                            <img
+                                                className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
+                                                src="./assets/images/icons/icon-arrow-right.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="ab2"
+                                    >
+                                        <a className="flex items-center justify-between text-[14px]" href="/about-2.html">
+                                            <span className="whitespace-nowrap">Asia Pacific</span>
+                                            <img
+                                                className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
+                                                src="./assets/images/icons/icon-arrow-right.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="ab2"
+                                    >
+                                        <a className="flex items-center justify-between text-[14px]" href="/about-2.html">
+                                            <span className="whitespace-nowrap">AMEA</span>
+                                            <img
+                                                className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
+                                                src="./assets/images/icons/icon-arrow-right.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="ab3"
+                                    >
+                                        <a className="flex items-center justify-between text-[14px]" href="/about-3.html">
+                                            <span className="whitespace-nowrap">Global</span>
+                                            <img
+                                                className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
+                                                src="./assets/images/icons/icon-arrow-right.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li className="flex items-center group">
+
+                            <li className="flex items-center group relative">
                                 <Link
-                                    className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
+                                    className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px] flex items-center"
                                     href="/"
                                 >
-                                    Resourses
-                                </Link>
-                            </li>
-                            <li className="flex items-center group">
-                                <Link
-                                    className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
-                                    href="/"
-                                >
-                                    User
+                                    Product Testing
                                 </Link>
                                 <i>
-                                    <img
-                                        className="icon-caret group-hover:filter-green"
-                                        src="./assets/images/icons/icon-caret.svg"
-                                        alt="caret"
-                                    />
+                                    <img className="icon-caret group-hover:filter-green" src="./assets/images/icons/icon-caret.svg" alt="caret" />
                                 </i>
                                 <ul className="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-1 w-[185px]">
                                     <li
@@ -99,12 +140,20 @@ const Header = () => {
                                         data-menu="b1"
                                     >
                                         <Link className="flex items-center text-[14px]" href="/blog-1.html">
+                                            <span className="whitespace-nowrap">Chemicals</span>
+                                        </Link>
+                                    </li>
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="b1"
+                                    >
+                                        <Link className="flex items-center justify-between text-[14px]" href="/blog-1.html">
+                                            <span className="whitespace-nowrap">Electronics & Electricals</span>
                                             <img
                                                 className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                                                src="./assets/images/icons/icon-edit.svg"
+                                                src="./assets/images/icons/icon-arrow-right.svg"
                                                 alt=""
                                             />
-                                            <span className="whitespace-nowrap">Create an account</span>
                                         </Link>
                                     </li>
                                     <li
@@ -112,48 +161,94 @@ const Header = () => {
                                         data-menu="b1"
                                     >
                                         <Link className="flex items-center text-[14px]" href="/blog-1.html">
-                                            <img
-                                                className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                                                src="./assets/images/icons/icon-edit.svg"
-                                                alt=""
-                                            />
-                                            <span className="whitespace-nowrap">Login</span>
+                                            <span className="whitespace-nowrap">Food & Water</span>
+                                        </Link>
+                                    </li>
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="b1"
+                                    >
+                                        <Link className="flex items-center text-[14px]" href="/blog-1.html">
+                                            <span className="whitespace-nowrap">Lightning</span>
+                                        </Link>
+                                    </li>
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="b1"
+                                    >
+                                        <Link className="flex items-center text-[14px]" href="/blog-1.html">
+                                            <span className="whitespace-nowrap">MSDS</span>
+                                        </Link>
+                                    </li>
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="b1"
+                                    >
+                                        <Link className="flex items-center text-[14px]" href="/blog-1.html">
+                                            <span className="whitespace-nowrap">REACH</span>
+                                        </Link>
+                                    </li>
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="b1"
+                                    >
+                                        <Link className="flex items-center text-[14px]" href="/blog-1.html">
+                                            <span className="whitespace-nowrap">ROHS</span>
                                         </Link>
                                     </li>
                                 </ul>
                             </li>
-                            {/* <li className="flex items-center group">
-                                <Link
-                                    className="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]"
-                                    href="/"
-                                >
-                                    Event
+
+                            <li class="flex items-center group">
+                                <Link class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px]" href="/">
+                                    Resources
                                 </Link>
-                                <i>
-                                    <img
-                                        className="icon-caret group-hover:filter-green"
-                                        src="./assets/images/icons/icon-caret.svg"
-                                        alt="caret"
-                                    />
-                                </i>
+                                <i><img class="icon-caret group-hover:filter-green" src="./assets/images/icons/icon-caret.svg" alt="caret" /></i>
                                 <ul className="menu-child translate-y-4 opacity-0 bg-white top-full z-50 py-2 grid menu-shadow -translate-x-6 translate-y-8 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto lg:absolute rounded-[4px] group-hover:grid group-hover:opacity-100 before:content-[''] before:block before:absolute before:w-full before:h-12 before:top-[-35px] before:left-0 grid-cols-1 w-[185px]">
                                     <li
                                         className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
-                                        data-menu="s1"
+                                        data-menu="ab1"
                                     >
-                                        <Link className="flex items-center text-[14px]" href="/shop-1.html">
+                                        <a className="flex items-center justify-between text-[14px]" href="/about-1.html">
+                                            <span className="whitespace-nowrap">Industry Events</span>
                                             <img
                                                 className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                                                src="./assets/images/icons/icon-edit.svg"
+                                                src="./assets/images/icons/icon-arrow-right.svg"
                                                 alt=""
                                             />
-                                            <span className="whitespace-nowrap">Shop 01</span>
-                                        </Link>
+                                        </a>
+                                    </li>
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="ab2"
+                                    >
+                                        <a className="flex items-center justify-between text-[14px]" href="/about-2.html">
+                                            <span className="whitespace-nowrap">News</span>
+                                            <img
+                                                className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
+                                                src="./assets/images/icons/icon-arrow-right.svg"
+                                                alt=""
+                                            />
+                                        </a>
+                                    </li>
+                                    <li
+                                        className="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                                        data-menu="ab2"
+                                    >
+                                        <a className="flex items-center justify-between text-[14px]" href="/about-2.html">
+                                            <span className="whitespace-nowrap">Standards</span>
+                                            <img
+                                                className="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
+                                                src="./assets/images/icons/icon-arrow-right.svg"
+                                                alt=""
+                                            />
+                                        </a>
                                     </li>
                                 </ul>
-                            </li> */}
+                            </li>
                         </ul>
                     </nav>
+
                     <div className="hidden xl:block">
                         <button type="button">
                             <Link
@@ -174,14 +269,17 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
+
+                {/* --------for mobile---------- */}
                 <div
-                    className={`burger-icon burger-icon-white menu__icon cursor-pointer ${menuOpen ? "burger-close" : ""}`}
+                    className={`burger-icon burger-icon-white menu__icon cursor-pointer ${menuOpen ? "burger-close" : ""} burger-visible-mobile`}
                     onClick={toggleMenu}
                 >
                     <span className="burger-icon-top" />
                     <span className="burger-icon-mid"> </span>
                     <span className="burger-icon-bottom" />
                 </div>
+
                 <nav className={`fixed top-0 right-0 bg-white flex flex-col h-screen nav-shadow overflow-y-scroll nav-mobile transition-all duration-200 w-[380px] z-[100] ${menuOpen ? "" : "opacity-0 pointer-events-none"}  `}>
                     <div className="flex items-center border-b p-[15px] lg:p-[26px] gap-[10px] border-[#F2F4F7]">
                         <img

@@ -1,5 +1,7 @@
 
-
+import { FaXTwitter, FaFacebookF, FaTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaPinterest } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -8,8 +10,8 @@ const Footer = () => {
                 <div className="flex flex-col items-center gap-2 mb-14 md:flex-row md:justify-between">
                     {" "}
                     <img
-                        className="h-full w-full object-cover max-w-[162px]"
-                        src="./assets/images/logo.svg"
+                        className="h-full object-cover  w-[90px] md:w-[101px] lg:w-[122px] xl:w-[139px]"
+                        src="/assets/img/sad.svg"
                         alt="logo"
                     />
                     <div className="flex items-center flex-col gap-5 md:flex-row lg:gap-[30px]">
@@ -33,123 +35,149 @@ const Footer = () => {
                 <div className="text-gray-600 grid gird-cols-1 gap-8 mb-[48px] md:grid-cols-2 lg:grid-cols-5 xl:gap-[98px]">
                     <div>
                         <h5 className="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">
-                            Contact
+                            Contact Us
                         </h5>
                         <p className="text-text mb-5">
-                            4517 Washington Ave. Manchester, Kentucky 39495
+                            ADDRESS (CORPORATE OFFICE) <br />
+                            A-34, Sector 63 A, Noida, Uttar Pradesh 201307
                         </p>
-                        <p className="text-text underline">(239) 555-0108</p>
-                        <p className="text-text underline">contact@agon.com</p>
+                        <p className="text-text underline">+91 9999118039</p>
+                        <p className="text-text underline">Contact@instacertify.com</p>
                     </div>
                     <div>
-                        <h5 className="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">
-                            About Us
+                        <h5 class="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">
+                            Services
                         </h5>
-                        <ul>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Mission &amp; Vision
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Our Team
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Careers
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Press &amp; Media
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Advertising
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Testimonials
-                                </a>
-                            </li>
-                        </ul>
+
+                        <marquee direction="up" scrollamount="2" behavior="scroll" height="200px">
+                            <ul>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        BIS (ISI MARK) for Foreign Manufacturers
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        BIS (ISI Mark) for Domestic Product Certification
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        BIS (CRS Mark) for Compulsory Registration Scheme
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        EPR Plastic Waste
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        EPR E-Waste
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        EPR Battery Waste
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        EPR for Used Oil
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        EPR for Tyre
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Peso Certification
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        NSIC of MSME
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        STQC Certification
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        FSSAI Registration
+                                    </a>
+                                </li>
+                            </ul>
+                        </marquee>
                     </div>
+
                     <div>
                         <h5 className="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">
-                            Discover
+                            Industries
                         </h5>
-                        <ul>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Our Blog
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Plans &amp; Pricing
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Knowledge Base
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Cookie Policy
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Office Center
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    News &amp; Events
-                                </a>
-                            </li>
-                        </ul>
+                        <marquee direction="up" scrollamount="2" behavior="scroll" height="200px">
+                            <ul>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Electronic and Electricity
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Chemicals
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Foods
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Toys
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Metal and Alloys
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Polymers and Plastics
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Construction and Engineering
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Wireless
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Cosmetics
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Software
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a class="transition-all duration-200 hover:text-green-900 hover:pl-[3px]" href="/">
+                                        Environment
+                                    </a>
+                                </li>
+                            </ul>
+                        </marquee>
                     </div>
                     <div>
                         <h5 className="text-heading-5 font-chivo font-bold text-gray-900 mb-5 text-[18px]">
@@ -161,7 +189,7 @@ const Footer = () => {
                                     className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
                                     href="/"
                                 >
-                                    FAQs
+                                    Blogs
                                 </a>
                             </li>
                             <li className="mb-2">
@@ -169,7 +197,7 @@ const Footer = () => {
                                     className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
                                     href="/"
                                 >
-                                    Editor Help
+                                    About Us
                                 </a>
                             </li>
                             <li className="mb-2">
@@ -177,7 +205,7 @@ const Footer = () => {
                                     className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
                                     href="/"
                                 >
-                                    Community
+                                    FAQS
                                 </a>
                             </li>
                             <li className="mb-2">
@@ -185,23 +213,7 @@ const Footer = () => {
                                     className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
                                     href="/"
                                 >
-                                    Live Chatting
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Contact Us
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Support Center
+                                    Authors
                                 </a>
                             </li>
                         </ul>
@@ -216,7 +228,7 @@ const Footer = () => {
                                     className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
                                     href="/"
                                 >
-                                    Request an offer
+                                    Events
                                 </a>
                             </li>
                             <li className="mb-2">
@@ -224,7 +236,7 @@ const Footer = () => {
                                     className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
                                     href="/"
                                 >
-                                    How it works
+                                    Shop
                                 </a>
                             </li>
                             <li className="mb-2">
@@ -232,7 +244,7 @@ const Footer = () => {
                                     className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
                                     href="/"
                                 >
-                                    Pricing
+                                    Patterns
                                 </a>
                             </li>
                             <li className="mb-2">
@@ -240,15 +252,7 @@ const Footer = () => {
                                     className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
                                     href="/"
                                 >
-                                    Reviews
-                                </a>
-                            </li>
-                            <li className="mb-2">
-                                <a
-                                    className="transition-all duration-200 hover:text-green-900 hover:pl-[3px]"
-                                    href="/"
-                                >
-                                    Stories
+                                    Themes
                                 </a>
                             </li>
                         </ul>
@@ -257,7 +261,7 @@ const Footer = () => {
                 <div className="w-full bg-gray-200 h-[1px] mb-[46px]" />
                 <div className="text-gray-400 lg:flex lg:items-center lg:justify-between">
                     <div className="md:flex md:items-center md:gap-6">
-                        <p className="text-lead font-bold">©Agon Official 2022</p>
+                        <p className="text-lead font-bold">©Instacertify Official 2022</p>
                         <div className="flex items-center justify-between md:gap-6">
                             <a className="text-text" href="/">
                                 Privacy policy
@@ -270,11 +274,38 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="flex items-center justify-center gap-5 mt-5 lg:mt-0">
+                    {/* <div className="flex items-center justify-center gap-5 mt-5 lg:mt-0">
                         <a
+                            href="/"
+                            className="w-10 h-10 bg-[#328c91] text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:opacity-70 hover:-translate-y-1"
+                        >
+                            <FaFacebookF />
+                        </a>
+                        <a
+                            href="/"
+                            className="w-10 h-10 bg-[#328c91] text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:opacity-70 hover:-translate-y-1"
+                        >
+                            <FaPinterest />
+                        </a>
+                        <a
+                            href="/"
+                            className="w-10 h-10 bg-[#328c91] text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:opacity-70 hover:-translate-y-1"
+                        >
+                            <FaTwitter />
+                        </a>
+                        <a
+                            href="/"
+                            className="w-10 h-10 bg-[#328c91] text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:opacity-70 hover:-translate-y-1"
+                        >
+                            <FaLinkedinIn />
+                        </a>
+                    </div> */}
+                    <div className="flex items-center justify-center gap-5 mt-5 lg:mt-0">
+                       <a
                             className="w-8 h-8 transition-all duration-300 hover:opacity-70 hover:-translate-y-1"
                             href="/"
                         >
+                            {/* <FaFacebookF className=" " /> */}
                             <img
                                 className="h-full w-full object-cover"
                                 src="./assets/images/icons/icon-facebook-green.svg"
@@ -290,6 +321,7 @@ const Footer = () => {
                                 src="./assets/images/icons/icon-instagram-green.svg"
                                 alt="instagram icon"
                             />
+                            {/* <FaTwitter /> */}
                         </a>
                         <a
                             className="w-8 h-8 transition-all duration-300 hover:opacity-70 hover:-translate-y-1"
@@ -300,6 +332,7 @@ const Footer = () => {
                                 src="./assets/images/icons/icon-twitter-green.svg"
                                 alt="twitter icon"
                             />
+                            {/* <FaLinkedinIn /> */}
                         </a>
                         <a
                             className="w-8 h-8 transition-all duration-300 hover:opacity-70 hover:-translate-y-1"
@@ -310,6 +343,7 @@ const Footer = () => {
                                 src="./assets/images/icons/icon-linkedin-green.svg"
                                 alt="linkedin icon"
                             />
+                            {/* <FaPinterest /> */}
                         </a>
                     </div>
                 </div>
