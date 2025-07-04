@@ -190,32 +190,6 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-                    {/* <div className="flex items-center justify-center gap-5 mt-5 lg:mt-0">
-                        <a
-                            href="/"
-                            className="w-10 h-10 bg-[#328c91] text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:opacity-70 hover:-translate-y-1"
-                        >
-                            <FaFacebookF />
-                        </a>
-                        <a
-                            href="/"
-                            className="w-10 h-10 bg-[#328c91] text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:opacity-70 hover:-translate-y-1"
-                        >
-                            <FaPinterest />
-                        </a>
-                        <a
-                            href="/"
-                            className="w-10 h-10 bg-[#328c91] text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:opacity-70 hover:-translate-y-1"
-                        >
-                            <FaTwitter />
-                        </a>
-                        <a
-                            href="/"
-                            className="w-10 h-10 bg-[#328c91] text-white rounded-full flex items-center justify-center text-[16px] transition-all duration-300 hover:opacity-70 hover:-translate-y-1"
-                        >
-                            <FaLinkedinIn />
-                        </a>
-                    </div> */}
                     <div className="flex items-center justify-center gap-5 mt-5 lg:mt-0">
                         <a className="social-icon" href="/">
                             <FaFacebookF />
