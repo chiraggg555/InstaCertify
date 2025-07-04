@@ -7,6 +7,7 @@ import "../../public/assets/styles/tailwind.min.css";
 import WelcomePopup from "@/components/Layout/welcome-popup";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Cookies from "@/components/Layout/cookies";
 
 
 export default function App({ Component, pageProps }) {
@@ -37,6 +38,7 @@ export default function App({ Component, pageProps }) {
         </div>
         {/* 💬 Welcome Popup */}
       </div>
+      <Cookies />
     </>
   );
 }
