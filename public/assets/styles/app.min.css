@@ -599,3 +599,22 @@ input:checked~.dot {
   animation: marqueeUp 10s linear infinite;
 }
 
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ec6a20; 
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+  transform: translateY(-4px);
+}
+
