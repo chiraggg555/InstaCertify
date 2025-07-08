@@ -1,6 +1,7 @@
 import { TABDATA } from "@/utills/const";
 import Link from "next/link";
 import { useState } from "react";
+import AnimatedButton from "../AnimatedButton";
 
 const WhyTrust = ({ onOpen }) => {
   const [activeTab, setActiveTab] = useState("toys");
@@ -8,36 +9,12 @@ const WhyTrust = ({ onOpen }) => {
 
   return (
     <>
-      {showVideo && (
-        <div className="absolute top-0 left-0 w-full h-full bg-opacity-80 video-iframe bg-[#0b0b0b] z-[999999]">
-          <div className="mx-auto video w-1/2">
-            <div className="flex justify-end">
-              <button
-                className="text-white text-[20px]"
-                type="button"
-                title="Close (Esc)"
-                onClick={() => setShowVideo(false)}
-              >
-                x
-              </button>
-            </div>
-            <iframe
-              className="aspect-video w-full"
-              src="https://www.youtube.com/embed/oRI37cOPBQQ?autoplay=1"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      )}
       <div className="px-[12px] md:px-[36px] mt-[70px] xl:px-0">
         <div className="text-center">
-          <h2 className="font-bold font-chivo mx-auto text-[35px] leading-[44px] md:text-[46px] md:leading-[52px] lg:text-heading-1 text-gray-900 mb-5 md:mb-[30px] max-w-[725px]">
+          <h2 className="heading">
             See why we are trusted the world over
           </h2>
-          <p className="text-quote md:text-lead-lg text-gray-600 mx-auto max-w-[976px]">
+          <p className="subtext">
             From secure digital certifications to seamless verification
             processes, Instacertify empowers organizations globally with
             trusted, tamper-proof credentials. Discover why educational
@@ -45,8 +22,10 @@ const WhyTrust = ({ onOpen }) => {
             authenticity at scale.
           </p>
         </div>
-
-        <div className="flex items-center gap-5 justify-center flex-wrap mx-auto w-full mt-[90px] sm:w-[80%] xl:w-full mb-[58px]">
+        <div className="flex items-center justify-center mt-5">
+          <AnimatedButton title={"Know more"} />
+        </div>
+        {/* <div className="flex items-center gap-5 justify-center flex-wrap mx-auto w-full mt-[90px] sm:w-[80%] xl:w-full mb-[58px]">
           {TABDATA.map((tab) => (
             <p
               key={tab.id}
@@ -118,7 +97,7 @@ const WhyTrust = ({ onOpen }) => {
               </button>
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
     </>
   );

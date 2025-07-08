@@ -1548,6 +1548,13 @@ select {
     width: 100px
 }
 
+.w-\[110px\] {
+    width: 110px
+}
+.w-\[120px\] {
+    width: 120px
+}
+
 .w-\[82px\] {
     width: 82px
 }
@@ -2239,7 +2246,7 @@ select {
 
 @keyframes hero-thumb-sm-animation {
     0% {
-        transform: translateX(50px)
+        transform: translateX(40px)
     }
 
     to {
@@ -3588,13 +3595,13 @@ select {
 }
 
 .text-quote {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 28px
 }
 
 .text-excerpt {
-    font-size: 18px;
-    line-height: 26px
+    font-size: 16px;
+    line-height: 23px
 }
 
 .text-heading-5 {
@@ -4454,6 +4461,9 @@ select {
     .md\:ml-\[78px\] {
         margin-left: 78px
     }
+    .md\:ml-\[110px\] {
+        margin-left: 110px
+    }
 
     .md\:mr-\[50px\] {
         margin-right: 50px
@@ -4603,6 +4613,9 @@ select {
         width: 55ch
     }
 
+    .md\:max-w-\[25\%\] {
+        max-width: 25%
+    }
     .md\:max-w-\[50ch\] {
         max-width: 50ch
     }
@@ -4617,6 +4630,12 @@ select {
 
     .md\:max-w-\[52px\] {
         max-width: 52px
+    }
+    .md\:max-w-\[100px\] {
+        max-width: 100px
+    }
+    .md\:max-w-\[120px\] {
+        max-width: 120px
     }
 
     .md\:-translate-y-\[30\%\] {
@@ -4847,7 +4866,7 @@ select {
     }
 
     .md\:text-lead-lg {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 32px
     }
 
@@ -5130,6 +5149,9 @@ select {
         margin-right: 30px
     }
 
+    .lg\:mb-\[40px\] {
+        margin-bottom: 40px
+    }
     .lg\:mb-\[48px\] {
         margin-bottom: 48px
     }
@@ -5447,9 +5469,9 @@ select {
     }
 
     .lg\:text-display-2 {
-        font-size: 80px;
+        font-size: 55px;
         letter-spacing: -.005em;
-        line-height: 88px
+        line-height: 60px
     }
 
     .lg\:text-\[26px\] {
